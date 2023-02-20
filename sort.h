@@ -29,4 +29,8 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 
+
+/* Helper Functions */
+int partitioner(int *array, int low, int high, size_t size);
+void q_sort(int *array, int low, int high, size_t size);
 #endif
