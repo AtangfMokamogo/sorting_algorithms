@@ -13,7 +13,7 @@ void quick_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	quick_s(array, 0, size - 1, size);
+	q_sort(array, 0, size - 1, size);
 }
 
 
@@ -74,7 +74,7 @@ void q_sort(int *array, int low, int high, size_t size)
 	if (low < high)
 	{
 		pivot = partition(array, low, high, size);
-		quick_s(array, low, pivot - 1, size);
-		quick_s(array, pivot + 1, high, size);
+		q_sort(array, low, pivot - 1, size);
+		q_sort(array, pivot + 1, high, size);
 	}
 }
