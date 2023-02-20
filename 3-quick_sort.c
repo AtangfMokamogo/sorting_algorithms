@@ -24,9 +24,10 @@ void quick_sort(int *array, size_t size)
   * @high: upper bound
   * @size: size of @array
   *
+  * Description: the Lomuto partitioning scheme is used here
   * Return: the pivot
   */
-int partition(int *array, int low, int high, size_t size)
+int partitioner(int *array, int low, int high, size_t size)
 {
 	int i = low - 1, j = low;
 	int pivot = array[high], temp = 0;
@@ -63,9 +64,10 @@ int partition(int *array, int low, int high, size_t size)
   * @low: lower bound
   * @size: size of @array
   *
+  * Description: sorts an array using quick sort
   * Return: void
   */
-void quick_s(int *array, int low, int high, size_t size)
+void q_sort(int *array, int low, int high, size_t size)
 {
 	int pivot;
 
