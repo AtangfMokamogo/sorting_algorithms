@@ -4,7 +4,7 @@
   * bubble_sort - implements bubble sort algorithm
   * @array: An array of unsorted intergers.
   * @size: The length of @array
-
+  *
   * Description: sort the array using bubble sort in ascending order.
   * Return: void
   */
