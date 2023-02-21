@@ -1,16 +1,18 @@
 #include "sort.h"
 
 /**
- * shell_sort - sorts an array of integers in ascending order using the Shell sort algorithm
+ * shell_sort - implements the Shell sort algorithm
  * @array: the array to sort
- * @size: the size of the array
+ * @size: the size @array
  *
+ * Description: sort ann array in ascending order
  * Return: void
  */
 void shell_sort(int *array, size_t size)
 {
 	int temp;
 	size_t gap, i, j;
+
 	if (array == NULL || size < 2)
 		return;
 	/* Determine the starting gap */
